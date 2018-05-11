@@ -1,0 +1,7 @@
+{{outlet}}
+{{#each model as |post|}}
+    {{post.title}}
+    {{post.publishedAt}}
+    {{post.content}}
+{{/each}}
+<button {{action "DeletePost" author}}>Delete Post</button>
